@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="tools.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Tools</h1>
+    </header>
+    <div class="container">
+      <section class="section-1">
+        <button class="btn btn--1">
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icons"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"
+              />
+            </svg>
+          </span>
+          Calculator
+        </button>
+        <button class="btn btn--2">
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icons"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+              />
+            </svg>
+          </span>
+          Prime Number Checker
+        </button>
+        <button class="btn btn--3">
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icons"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
+              />
+            </svg>
+          </span>
+          Length and Volume
+        </button>
+        <button class="btn btn--4">
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icons"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+              />
+            </svg>
+          </span>
+          Number Conversion
+        </button>
+      </section>
+      <section class="section-2">
+<!-- //////////////////////////////////CALCULATOR//////////////////////////// -->
+        <div class="calculator hidden">
+          <div class="display"><h1 class="calcDisplay">0</h1></div>
+          <div class="calcBtns">
+            <button class="oprbtn">clr</button>
+            <button class="delete">←</button>
+            <button class="oprbtn">*</button>
+            <button class="plus oprbtn">+</button>
+            <button class="calcbtn">7</button>
+            <button class="calcbtn">8</button>
+            <button class="calcbtn">9</button>
+            <button class="calcbtn">6</button>
+            <button class="calcbtn">4</button>
+            <button class="calcbtn">5</button>
+            <button class="oprbtn">-</button>
+            <button class="calcbtn">1</button>
+            <button class="calcbtn">2</button>
+            <button class="calcbtn">3</button>
+            <button class="oprbtn">÷</button>
+            <button>🐶</button>
+            <button class="calcbtn">0</button>
+            <button class="calcbtn">.</button>
+            <button class="oprbtn">=</button>
+           
+          </div>
+        </div>
+<!-- //////////////////////////PRIME NUMBER CHECKER/////////////////////// -->
+        <div class="primeChecker hidden">
+          <h1>Enter the number you want to check.</h1>
+          <input class="textbox"  type="text" placeholder="1234" required />
+          <button class="PNC-btn">Check</button>
+          <h1 id="ansDisplay1" class="answer">Answer is</h1>
+        </div>
+<!-- /////////////////////LENGTH AND VOLUME CONVERSION//////////////////// -->
+        <div class="LengthAndVolume hidden">
+          <div class="select">
+            <div class="selection">
+              <h1>What do you want to Check?</h1>
+              <button id="len">Length</button>
+              <button id="vol">Volume</button>
+            </div>
+          </div>
+
+          <div class="checker hidden">
+ <!-- ///////html code is printed here according to the selection/////////// -->
+            <div class="normalBtns">
+                <button class="Nbtns">7</button>
+                <button class="Nbtns">8</button>
+                <button class="Nbtns">9</button>
+                <button class="Nbtns">4</button>
+                <button class="Nbtns">5</button>
+                <button class="Nbtns">6</button>
+                <button class="Nbtns">1</button>
+                <button class="Nbtns">2</button>
+                <button class="Nbtns">3</button>
+                <button class="delete1">←</button>
+                <button class="Nbtns">0</button>
+                <button class="enter">↵</button>
+              </div>
+              <button class="back">Back</button>
+            </div>
+          </div>
+<!-- ////////////////////NUMBER CONVERSION--(NC)////////////////////////////// -->
+          <div class="numConversion hidden">
+              <!-- <h1>Decimal</h1> -->
+              <select class="optSelect" id="NC-options">
+                  <option value="Binary">Binary</option>
+                  <option value="Decimal">Decimal</option>
+              </select>
+              <input class="box-1 textbox2"type="text" placeholder="0">
+              <button class="NC-btn">Convert</button>
+              <h1 id="convertInto">Select the option you want to convert into</h1>
+              <div class="box-2 textbox2">0</div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="tools.js"></script>
+  </body>
+</html>
